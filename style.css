@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #004080;
+  color: white;
+  padding: 1rem;
+}
+
+header nav a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
+
+.games a {
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background-color: #0073e6;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
