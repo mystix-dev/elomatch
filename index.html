@@ -2,33 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>EloMatch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EloMatch – Play Chess & Checkers</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* ---- Global ---- */
+    body { margin: 0; font-family: 'Arial', sans-serif; background-color: #f0f2f5; color: #333; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ---- Header ---- */
+    header { background-color: #003366; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    header nav a { margin-left: 1.5rem; font-weight: bold; }
+    header nav a:hover { text-decoration: underline; }
+
+    /* ---- Hero ---- */
+    .hero { display: flex; justify-content: space-between; align-items: center; padding: 4rem 2rem; background-color: #0055a5; color: white; }
+    .hero-text { max-width: 600px; }
+    .hero-text h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero-text p { font-size: 1.25rem; margin-bottom: 2rem; }
+    .hero-buttons a { display: inline-block; margin-right: 1rem; padding: 1rem 2rem; background-color: #ffcc00; color: #003366; font-weight: bold; border-radius: 8px; }
+    .hero-buttons a:hover { background-color: #ffdb4d; }
+    .hero-image img { max-width: 400px; border-radius: 12px; }
+
+    /* ---- Featured Games ---- */
+    .games-section { padding: 3rem 2rem; text-align: center; }
+    .games-section h2 { font-size: 2rem; margin-bottom: 2rem; }
+    .games-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem; }
+    .game-card { background-color: white; padding: 1.5rem; border-radius: 12px; width: 250px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s; }
+    .game-card:hover { transform: translateY(-5px); }
+    .game-card img { width: 100%; border-radius: 8px; margin-bottom: 1rem; }
+    .game-card h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+    .game-card p { font-size: 0.95rem; color: #666; }
+
+    /* ---- Footer ---- */
+    footer { background-color: #003366; color: white; text-align: center; padding: 2rem; margin-top: 4rem; }
+  </style>
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <h1>EloMatch</h1>
+    <div class="logo">
+      <h2>EloMatch</h2>
+    </div>
     <nav>
       <a href="index.html">Home</a>
       <a href="chess.html">Chess</a>
       <a href="checkers.html">Checkers</a>
-      <a href="#">Wallet</a>
+      <a href="#">Leaderboard</a>
+      <a href="#">Login / Sign Up</a>
     </nav>
   </header>
 
-  <main>
-    <h2>Play Competitive Games for Cash Prizes!</h2>
-    <p>Join 1v1 Chess or Checkers matches. Entry fees start at $1. Platform takes a 5% service fee. Winner takes 95% of the pot.</p>
-    <div class="games">
-      <a href="chess.html">Play Chess</a>
-      <a href="checkers.html">Play Checkers</a>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Play Competitive Games for Cash Prizes</h1>
+      <p>Challenge players worldwide in Chess and Checkers. Entry fees start at $1. Winner takes 95% of the pot. Skill decides the winner!</p>
+      <div class="hero-buttons">
+        <a href="chess.html">Play Chess</a>
+        <a href="checkers.html">Play Checkers</a>
+      </div>
     </div>
-  </main>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1599865268562-67660c4235f2?auto=format&fit=crop&w=400&q=80" alt="Gaming Illustration">
+    </div>
+  </section>
 
+  <!-- Featured Games Section -->
+  <section class="games-section">
+    <h2>Featured Games</h2>
+    <div class="games-grid">
+      <div class="game-card">
+        <img src="https://images.unsplash.com/photo-1599865268562-67660c4235f2?auto=format&fit=crop&w=400&q=80" alt="Chess">
+        <h3>Chess</h3>
+        <p>1v1 skill-based chess matches. Compete globally and win cash prizes.</p>
+        <a href="chess.html">Play Now</a>
+      </div>
+      <div class="game-card">
+        <img src="https://images.unsplash.com/photo-1599865318261-fb5b5b7b572f?auto=format&fit=crop&w=400&q=80" alt="Checkers">
+        <h3>Checkers</h3>
+        <p>Classic Checkers (Dame) for 1v1 competition. Skill-based prizes for winners.</p>
+        <a href="checkers.html">Play Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <p>© 2026 EloMatch – Skill-based games, no gambling</p>
   </footer>
-
-  <script src="main.js"></script>
 </body>
 </html>
